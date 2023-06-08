@@ -1,1 +1,174 @@
-{"foods":[{"name":"donut", "calories":452, "proteins":4.9, "carbohidrates":51, "lipids":25, "nutriscore":-2, "weight":100, "fr":"Donut"},{"name":"pizza", "calories":211, "proteins":10.5, "carbohidrates":22.9, "lipids":8.1, "nutriscore":-2, "weight":200, "fr":"Pizza"},{"name":"bigMac", "calories":510, "proteins":37, "carbohidrates":41, "lipids":26, "nutriscore":-2, "weight":150, "fr":"Big Mac"},{"name":"pasta", "calories":350, "proteins":12, "carbohidrates":70, "lipids":2.5, "nutriscore":-2, "weight":100, "fr":"Pâtes"},{"name":"chicken", "calories":100, "proteins":21, "carbohidrates":1.3, "lipids":1.5, "nutriscore":2, "weight":100, "fr":"Poulet"},{"name":"ribSteak", "calories":200, "proteins":21, "carbohidrates":0, "lipids":10, "nutriscore":-1, "weight":200, "fr":"Entrecôte"},{"name":"fries", "calories":400, "proteins":4.8, "carbohidrates":52, "lipids":19, "nutriscore":-2, "weight":100, "fr":"Frites"},{"name":"egg", "calories":147, "proteins":13.8, "carbohidrates":1, "lipids":9.7, "nutriscore":1, "weight":100, "fr":"Oeufs"},{"name":"pineapple", "calories":50, "proteins":0.5, "carbohidrates":12, "lipids":0.3, "nutriscore":2, "weight":100, "fr":"Ananas"},{"name":"waterMellon", "calories":30, "proteins":0.5, "carbohidrates":6.3, "lipids":0.3, "nutriscore":2, "weight":100, "fr":"Pastèque"},{"name":"banana", "calories":136, "proteins":1.5, "carbohidrates":32, "lipids":0.7, "nutriscore":2, "weight":100, "fr":"Banane"},{"name":"salad", "calories":13, "proteins":1, "carbohidrates":2, "lipids":0.2, "nutriscore":2, "weight":100, "fr":"Salade"},{"name":"eggplant", "calories":29, "proteins":1, "carbohidrates":6, "lipids":0.2, "nutriscore":2, "weight":100, "fr":"Aubergine"},{"name":"tomate", "calories":21, "proteins":0.8, "carbohidrates":4.6, "lipids":0.3, "nutriscore":2, "weight":100, "fr":"Tomate"},{"name":"carot", "calories":30, "proteins":1, "carbohidrates":6.4, "lipids":0.3, "nutriscore":2, "weight":100, "fr":"Carotte"}]}
+{
+  "foods": [
+    {
+      "calories": 452,
+      "carbohydrates": 51,
+      "fr": "Donut",
+      "lipids": 25,
+      "name": "donut",
+      "nutriscore": -2,
+      "proteins": 4.9,
+      "weight": 100
+    },
+    {
+      "name": "pizza",
+      "calories": 211,
+      "proteins": 10.5,
+      "carbohydrates": 22.9,
+      "lipids": 8.1,
+      "nutriscore": -2,
+      "weight": 200,
+      "fr": "Pizza"
+    },
+    {
+      "name": "burger",
+      "calories": 510,
+      "proteins": 37,
+      "carbohydrates": 41,
+      "lipids": 26,
+      "nutriscore": -2,
+      "weight": 150,
+      "fr": "Big Mac"
+    },
+    {
+      "name": "croissant",
+      "calories": 180,
+      "proteins": 3,
+      "carbohydrates": 22,
+      "lipids": 9,
+      "nutriscore": -2,
+      "weight": 100,
+      "fr": "Croissant"
+    },
+    {
+      "name": "chicken",
+      "calories": 100,
+      "proteins": 21,
+      "carbohydrates": 1.3,
+      "lipids": 1.5,
+      "nutriscore": 2,
+      "weight": 100,
+      "fr": "Poulet"
+    },
+    {
+      "name": "ribsteak",
+      "calories": 200,
+      "proteins": 21,
+      "carbohydrates": 0,
+      "lipids": 10,
+      "nutriscore": -1,
+      "weight": 200,
+      "fr": "Entrecôte"
+    },
+    {
+      "name": "fries",
+      "calories": 400,
+      "proteins": 4.8,
+      "carbohydrates": 52,
+      "lipids": 19,
+      "nutriscore": -2,
+      "weight": 100,
+      "fr": "Frites"
+    },
+    {
+      "name": "egg",
+      "calories": 147,
+      "proteins": 13.8,
+      "carbohydrates": 1,
+      "lipids": 9.7,
+      "nutriscore": 1,
+      "weight": 100,
+      "fr": "Oeufs"
+    },
+    {
+      "name": "pineapple",
+      "calories": 50,
+      "proteins": 0.5,
+      "carbohydrates": 12,
+      "lipids": 0.3,
+      "nutriscore": 2,
+      "weight": 100,
+      "fr": "Ananas"
+    },
+    {
+      "name": "watermelon",
+      "calories": 30,
+      "proteins": 0.5,
+      "carbohydrates": 6.3,
+      "lipids": 0.3,
+      "nutriscore": 2,
+      "weight": 100,
+      "fr": "Pastèque"
+    },
+    {
+      "name": "banana",
+      "calories": 136,
+      "proteins": 1.5,
+      "carbohydrates": 32,
+      "lipids": 0.7,
+      "nutriscore": 2,
+      "weight": 100,
+      "fr": "Banane"
+    },
+    {
+      "name": "salad",
+      "calories": 13,
+      "proteins": 1,
+      "carbohydrates": 2,
+      "lipids": 0.2,
+      "nutriscore": 2,
+      "weight": 100,
+      "fr": "Salade"
+    },
+    {
+      "name": "eggplant",
+      "calories": 29,
+      "proteins": 1,
+      "carbohydrates": 6,
+      "lipids": 0.2,
+      "nutriscore": 2,
+      "weight": 100,
+      "fr": "Aubergine"
+    },
+    {
+      "name": "tomato",
+      "calories": 21,
+      "proteins": 0.8,
+      "carbohydrates": 4.6,
+      "lipids": 0.3,
+      "nutriscore": 2,
+      "weight": 100,
+      "fr": "Tomate"
+    },
+    {
+      "name": "carot",
+      "calories": 30,
+      "proteins": 1,
+      "carbohydrates": 6.4,
+      "lipids": 0.3,
+      "nutriscore": 2,
+      "weight": 100,
+      "fr": "Carotte"
+    },
+    {
+      "name": "avocado",
+      "calories": 330,
+      "proteins": 5,
+      "carbohydrates": 2,
+      "lipids": 37,
+      "nutriscore": 1,
+      "weight": 100,
+      "fr": "Avocat"
+    },
+    {
+      "name": "cheese",
+      "calories": 380,
+      "proteins": 28.4,
+      "carbohydrates": 0,
+      "lipids": 39.6,
+      "nutriscore": -2,
+      "weight": 100,
+      "fr": "Fromage"
+    }
+  ]
+}

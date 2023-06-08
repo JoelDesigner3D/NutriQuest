@@ -2,8 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Food : MonoBehaviour
+public class FoodProperties : MonoBehaviour
 {
+
+    [SerializeField] DataManager dataManager;
+    //private FoodProperties foodProperties;
+    private FoodData foodData;
+
     [SerializeField] private string foodName;
     [SerializeField] private string fr;
     [SerializeField] private float calories;
@@ -11,14 +16,31 @@ public class Food : MonoBehaviour
     [SerializeField] private float proteins;
     [SerializeField] private float carbohydrates;
     [SerializeField] private float weight;
-    [SerializeField] private int nutriScore;
+    [SerializeField] private int nutriscore;
 
-    private GameObject go;
 
     // Start is called before the first frame update
     void Start()
     {
-        go = this.gameObject;
+        fillProperties();
+    }
+
+    public void fillProperties()
+    {
+        string name = this.gameObject.name.ToLower();
+        foodData = dataManager.GetFoodDataByName(name);
+
+        //foodProperties = this.gameObject.GetComponent<FoodProperties>();
+
+        this.Name = foodData.name;
+        this.Calories = foodData.calories;
+        this.Fr = foodData.fr;
+        this.Lipids = foodData.lipids;
+        this.Proteins = foodData.proteins;
+        this.Carbohydrates = foodData.carbohydrates;
+        this.Nutriscore = foodData.nutriscore;
+        this.Weight = foodData.weight;
+
     }
 
     public string Name
@@ -64,10 +86,10 @@ public class Food : MonoBehaviour
     }
 
     // [A,B,C,D,E] = [2, 1, 0, -1, -2]
-    public int NutriScore
+    public int Nutriscore
     {
-        get { return nutriScore; }
-        set { nutriScore = value; }
+        get { return nutriscore; }
+        set { nutriscore = value; }
     }
 
 }

@@ -20,7 +20,7 @@ public struct FoodData
     public float proteins;
     public float carbohydrates;
     public float weight;
-    public int nutriScore;
+    public int nutriscore;
 }
 
 
@@ -28,9 +28,8 @@ public struct FoodData
 public class DataManager : MonoBehaviour
 {
 
-    private List<FoodData> foodList = new List<FoodData>();
+    private List<FoodData> foodList;
     private FoodsData foodsData;
-    private FoodData currentFood = new FoodData();
 
     private void Awake()
     {
@@ -54,11 +53,10 @@ public class DataManager : MonoBehaviour
 
     }
 
-    public FoodData GetFoodByName(string name)
+    public FoodData GetFoodDataByName(string name)
     {
-        currentFood = new FoodData();
-
-        return currentFood;
+        FoodData foundFood = foodList.Find(food => food.name == name);
+        return foundFood;
     }
 
 }

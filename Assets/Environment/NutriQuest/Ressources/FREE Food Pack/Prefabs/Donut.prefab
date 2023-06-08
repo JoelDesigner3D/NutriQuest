@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1929423686026795711}
   - component: {fileID: 9037860640217759459}
   - component: {fileID: 8823938537455516779}
+  - component: {fileID: 6346662379690957224}
   m_Layer: 0
   m_Name: Donut
   m_TagString: Food
@@ -30,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 1000011379175792}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -123,3 +124,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3248890018cabf5418aa9e44ae419d97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dataManager: {fileID: 0}
+  foodName: 
+  fr: 
+  calories: 0
+  lipids: 0
+  proteins: 0
+  carbohydrates: 0
+  weight: 0
+  nutriscore: 0
+--- !u!114 &6346662379690957224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011379175792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3248890018cabf5418aa9e44ae419d97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataManager: {fileID: 0}
+  foodName: 
+  fr: 
+  calories: 0
+  lipids: 0
+  proteins: 0
+  carbohydrates: 0
+  weight: 0
+  nutriscore: 0
