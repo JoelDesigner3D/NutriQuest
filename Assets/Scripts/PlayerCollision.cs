@@ -5,8 +5,15 @@ using UnityEngine;
 public class PlayerCollision : MonoBehaviour
 {
 
-    void OnTriggerEnter(Collider other)
+    [SerializeField] ActionEat actionEat;
+
+    private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Collision detected : " + other);
+        if (other.gameObject.tag == "Food")
+        {
+            actionEat.Eat(other.gameObject);
+        }
     }
+
 }
