@@ -30,7 +30,8 @@ public class UIManager : MonoBehaviour
         lipids.text = "Lipides : " + stomach.Lipids;
     }
 
-    public void OnQuitGame()
+
+    public void QuitGame()
     {
         gameManager.Quit();
     }
