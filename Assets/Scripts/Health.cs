@@ -2,6 +2,8 @@ using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+
 
 public class Health : MonoBehaviour
 {
@@ -11,7 +13,8 @@ public class Health : MonoBehaviour
     [SerializeField] UIManager uiManager;
     [SerializeField] GameObject player;
     [SerializeField] private float moveSpeed = 4;
-    
+
+    public UnityEvent OnChangeHealth;
 
     public void OnAbsorbedFood(int nutriscore)
     {
@@ -30,7 +33,10 @@ public class Health : MonoBehaviour
         }
 
         float speed = moveSpeed + nutriscore;
-            
+
+        OnChangeHealth.Invoke();
+
+
         player.GetComponent<ThirdPersonController>().MoveSpeed = speed;
 
     }
@@ -40,8 +46,6 @@ public class Health : MonoBehaviour
         get { return healthLevel; }
         set { 
             healthLevel = value;
-
-            uiManager.DisplayHealthLevel(healthLevel);
         }
     }
 
