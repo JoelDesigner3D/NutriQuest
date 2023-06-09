@@ -11,7 +11,6 @@ public class ActionEat : MonoBehaviour
     {
         stomach.AddFood(food.GetComponent<FoodProperties>());
 
-        //Delete food
         Destroy(food);
     }
 
