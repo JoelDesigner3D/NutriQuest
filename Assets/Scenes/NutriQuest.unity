@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.029152213, g: 0.064445764, b: 0.12695098, a: 1}
+  m_IndirectSpecularColor: {r: 0.02915217, g: 0.064445645, b: 0.1269507, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2448,6 +2448,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1925873226565265913, guid: 2553cec8fdb3eb643bbe9f2ec880c472,
         type: 3}
+      propertyPath: RotationSmoothTime
+      value: 0.175
+      objectReference: {fileID: 0}
+    - target: {fileID: 1925873226565265913, guid: 2553cec8fdb3eb643bbe9f2ec880c472,
+        type: 3}
       propertyPath: GroundLayers.m_Bits
       value: 513
       objectReference: {fileID: 0}
@@ -2459,12 +2464,17 @@ PrefabInstance:
     - target: {fileID: 2468714030164847400, guid: 2553cec8fdb3eb643bbe9f2ec880c472,
         type: 3}
       propertyPath: cursorLocked
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3624534483029687079, guid: 2553cec8fdb3eb643bbe9f2ec880c472,
         type: 3}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4109321647777063325, guid: 2553cec8fdb3eb643bbe9f2ec880c472,
+        type: 3}
+      propertyPath: m_Name
+      value: Mousey
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2553cec8fdb3eb643bbe9f2ec880c472, type: 3}
@@ -2940,6 +2950,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 562226114845165682, guid: abe33e2d4d152ff4e8348058148d7a0a,
     type: 3}
   m_PrefabInstance: {fileID: 1598018859}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &1620404087 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1018398531103957356, guid: 2553cec8fdb3eb643bbe9f2ec880c472,
+    type: 3}
+  m_PrefabInstance: {fileID: 1367775465}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1641488596
 PrefabInstance:
@@ -3770,6 +3786,9 @@ MonoBehaviour:
   uiManager: {fileID: 235718049}
   player: {fileID: 182643220}
   moveSpeed: 4
+  materialOK: {fileID: 2100000, guid: c6a951aacd6dc97428106a837b5b6f28, type: 2}
+  materialKO: {fileID: 2100000, guid: 038eb6ecc2e4648e79ca49f6866dea48, type: 2}
+  mouseyRenderer: {fileID: 1620404087}
   OnChangeHealth:
     m_PersistentCalls:
       m_Calls:

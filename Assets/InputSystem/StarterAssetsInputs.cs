@@ -53,7 +53,7 @@ namespace StarterAssets
 
 		public void LookInput(Vector2 newLookDirection)
 		{
-			look = newLookDirection;
+			look = newLookDirection * 10;
 		}
 
 		public void JumpInput(bool newJumpState)

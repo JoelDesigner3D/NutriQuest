@@ -14,12 +14,18 @@ public class Health : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] private float moveSpeed = 4;
 
+    [SerializeField] private Material materialOK;
+    [SerializeField] private Material materialKO;
+    [SerializeField] private Renderer mouseyRenderer;
+
     public UnityEvent OnChangeHealth;
 
     public void OnAbsorbedFood(int nutriscore)
     {
         Debug.Log("Health : OnAbsorbedFood > nutriscore :"+ nutriscore + " !");
         ChangePlayerSpeed(nutriscore);
+
+        UpdateHealth(nutriscore);
     }
 
     private void ChangePlayerSpeed(int nutriscore)
@@ -40,6 +46,23 @@ public class Health : MonoBehaviour
         player.GetComponent<ThirdPersonController>().MoveSpeed = speed;
 
     }
+
+
+    private void UpdateHealth(int nutriscore)
+    {
+        //Renderer renderer = player.GetComponent<Renderer>();
+
+        if (nutriscore < 0)
+        {
+            mouseyRenderer.material = materialKO;
+        }
+        else
+        {
+            mouseyRenderer.material = materialOK;
+        }
+
+    }
+
 
     public int HealthLevel
     {
