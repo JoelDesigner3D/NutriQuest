@@ -50,14 +50,15 @@ public class Health : MonoBehaviour
 
     private void UpdateHealth(int nutriscore)
     {
-        //Renderer renderer = player.GetComponent<Renderer>();
 
         if (nutriscore < 0)
         {
+            // update mousey's skin : sick
             mouseyRenderer.material = materialKO;
         }
         else
         {
+            // update mousey's skin : energetic
             mouseyRenderer.material = materialOK;
         }
 
