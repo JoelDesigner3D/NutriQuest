@@ -14,7 +14,7 @@ public class ActionEat : MonoBehaviour
         eatSound.Play();
         stomach.AddFood(food.GetComponent<FoodProperties>());
 
-
+        food.GetComponent<FoodController>().HideInfos();
         Destroy(food);
     }
 
