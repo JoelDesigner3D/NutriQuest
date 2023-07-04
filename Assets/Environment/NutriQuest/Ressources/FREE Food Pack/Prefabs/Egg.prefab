@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 23000011875077590}
   - component: {fileID: 8276557821523099922}
   - component: {fileID: 5253055601056317988}
+  - component: {fileID: 1164770281}
   m_Layer: 0
   m_Name: Egg
   m_TagString: Food
@@ -119,3 +120,17 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.076370545
   m_Center: {x: -0.000000029802322, y: -0.000000005122274, z: 0.0000000037252903}
+--- !u!114 &1164770281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012343480272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7207c112782e2ea44b98ddd9a859b636, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: 0, y: 1, z: 0}
+  speed: 15

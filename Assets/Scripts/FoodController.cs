@@ -1,17 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
-public class FoodController : MonoBehaviour
+public class FoodController : MonoBehaviour, IPointerClickHandler
 {
+    [SerializeField] private Vector3 direction;
+    [SerializeField] private int speed;
 
-    
 
-    // Start is called before the first frame update
-    void Start()
+    // Update is called once per frame
+    void Update()
     {
-        
+        // Food rotation
+        transform.Rotate(direction * speed * Time.deltaTime);
     }
 
-    
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        Debug.Log("clicked : " + gameObject.name);
+
+    }
+
+    private void DisplayCartouche()
+    {
+
+    }
+
+
 }

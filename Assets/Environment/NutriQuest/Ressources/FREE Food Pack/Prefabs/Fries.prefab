@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 23000013687971544}
   - component: {fileID: 3444149152285685197}
   - component: {fileID: 4850990849360590227}
+  - component: {fileID: 1325441876}
   m_Layer: 0
   m_Name: Fries
   m_TagString: Food
@@ -119,3 +120,17 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.06751358
   m_Center: {x: -0.000000014901161, y: 0, z: -0.000000018626451}
+--- !u!114 &1325441876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012400448258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7207c112782e2ea44b98ddd9a859b636, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: 0, y: 1, z: 0}
+  speed: 15
