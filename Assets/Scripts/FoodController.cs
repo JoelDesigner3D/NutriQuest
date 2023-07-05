@@ -1,10 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class FoodController : MonoBehaviour, IClickable
 {
@@ -13,6 +15,7 @@ public class FoodController : MonoBehaviour, IClickable
     [SerializeField] private GameObject foodInfo;
     [SerializeField] private AudioSource clickSound;
     [SerializeField] private float foodInfoHight = 1f;
+    [SerializeField] private ParticleSystem eatParticle;
 
     private Boolean foodInfoIsVisible = false;
     private FoodProperties foodProperties;
@@ -79,5 +82,12 @@ public class FoodController : MonoBehaviour, IClickable
             foodInfoIsVisible = false;
             foodInfo.SetActive(foodInfoIsVisible);
         }
+    }
+
+    public void ExplodeFood()
+    {
+        Vector3 positionParticles = gameObject.transform.position;
+        eatParticle.transform.position = positionParticles;
+        eatParticle.Play();
     }
 }
