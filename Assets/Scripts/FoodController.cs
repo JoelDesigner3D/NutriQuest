@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
-public class FoodController : MonoBehaviour, IPointerClickHandler
+public class FoodController : MonoBehaviour, IClickable
 {
     [SerializeField] private Vector3 direction;
     [SerializeField] private int speed;
@@ -15,6 +15,7 @@ public class FoodController : MonoBehaviour, IPointerClickHandler
     [SerializeField] private float foodInfoHight = 1f;
 
     private Boolean foodInfoIsVisible = false;
+    private FoodProperties foodProperties;
 
 
     // Update is called once per frame
@@ -24,6 +25,15 @@ public class FoodController : MonoBehaviour, IPointerClickHandler
         transform.Rotate(direction * speed * Time.deltaTime);
     }
 
+    public void OnClick()
+    {
+        Debug.Log("clicked : " + gameObject.name);
+        foodProperties = gameObject.GetComponent<FoodProperties>();
+        UpdateInfoPosition();
+        DisplayInfo(foodProperties);
+    }
+
+    /*
     public void OnPointerClick(PointerEventData eventData)
     {
         Debug.Log("clicked : " + gameObject.name);
@@ -31,6 +41,7 @@ public class FoodController : MonoBehaviour, IPointerClickHandler
         UpdateInfoPosition();
         DisplayInfo();
     }
+    */
 
     private void UpdateInfoPosition()
     {
@@ -41,11 +52,12 @@ public class FoodController : MonoBehaviour, IPointerClickHandler
         foodInfo.transform.position = new Vector3(posX, posY, posZ);
     }
 
-    private void DisplayInfo()
+    private void DisplayInfo(FoodProperties _foodProperties)
     {
         clickSound.Play();
 
-        foodInfo.GetComponentInChildren<FoodPanel>().SetName("gloubi");
+        //foodInfo.GetComponentInChildren<FoodPanel>().SetName("gloubi");
+        foodInfo.GetComponentInChildren<FoodPanel>().SetProperties(_foodProperties);
 
         if (!foodInfoIsVisible)
         {

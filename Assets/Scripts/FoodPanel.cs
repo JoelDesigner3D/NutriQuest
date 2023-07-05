@@ -34,6 +34,10 @@ public class FoodPanel : MonoBehaviour
     {
         _proteins.text = text;
     }
+    public void SetLipids(string text)
+    {
+        _lipids.text = text;
+    }
     public void SetCarbohidrates(string text)
     {
         _carbohidrates.text = text;
@@ -41,5 +45,14 @@ public class FoodPanel : MonoBehaviour
     public void SetNutriScore(string text)
     {
         _nutriscore.text = text;
+    }
+    public void SetProperties(FoodProperties _foodProperties)
+    {
+        this.SetName(_foodProperties.Fr);
+        this.SetCalories("Calories : "+_foodProperties.Calories);
+        this.SetProteins("Protéines : " + _foodProperties.Proteins);
+        this.SetCarbohidrates ("Protides : " + _foodProperties.Carbohydrates);
+        this.SetLipids("Lipides : " + _foodProperties.Lipids);
+        this.SetNutriScore("NutriScore : " + (_foodProperties.Nutriscore + 2));
     }
 }
