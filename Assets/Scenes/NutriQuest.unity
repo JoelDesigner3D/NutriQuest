@@ -4038,6 +4038,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 29811323, guid: 2553cec8fdb3eb643bbe9f2ec880c472, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 29811325, guid: 2553cec8fdb3eb643bbe9f2ec880c472, type: 3}
+      propertyPath: m_Height
+      value: 1.5123255
+      objectReference: {fileID: 0}
+    - target: {fileID: 29811325, guid: 2553cec8fdb3eb643bbe9f2ec880c472, type: 3}
+      propertyPath: m_Center.y
+      value: -0.24383804
+      objectReference: {fileID: 0}
     - target: {fileID: 61270238, guid: 2553cec8fdb3eb643bbe9f2ec880c472, type: 3}
       propertyPath: eatSound
       value: 
