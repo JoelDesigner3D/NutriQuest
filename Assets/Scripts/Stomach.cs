@@ -34,7 +34,8 @@ public class Stomach : MonoBehaviour
 
     public void digest(FoodProperties food)
     {
-        // Super algorythme de calcul de la mort à partir des macro-nutriments et micro-nutriments.
+        // On peut imaginer un super algorythme de calcul de la mort à partir des macro-nutriments et micro-nutriments.
+        // mais pour le coup c'est du pifomètre.
         this.QualityIndex += food.Nutriscore;
 
         // Digestion is complete

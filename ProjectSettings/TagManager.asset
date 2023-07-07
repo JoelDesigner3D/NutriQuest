@@ -6,6 +6,11 @@ TagManager:
   tags:
   - CinemachineTarget
   - Food
+  - Sea
+  - Boat
+  - Ground
+  - Grass
+  - Water
   layers:
   - Default
   - TransparentFX

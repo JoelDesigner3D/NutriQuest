@@ -246,6 +246,7 @@ namespace StarterAssets
             }
 
             _animationBlend = Mathf.Lerp(_animationBlend, targetSpeed, Time.deltaTime * SpeedChangeRate);
+
             if (_animationBlend < 0.01f) _animationBlend = 0f;
 
             // normalise input direction
